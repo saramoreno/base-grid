@@ -1,0 +1,69 @@
+/*
+Syntax error: Undefined variable: "$width".
+        on line 6 of /Users/Sara/Documents/proyectos/redradix/GRID-960/sass/base/_base.scss
+
+1: /Users/Sara/Documents/proyectos/redradix/GRID-960/sass/base/_base.scss
+
+Backtrace:
+/Users/Sara/Documents/proyectos/redradix/GRID-960/sass/base/_base.scss:6
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/variable.rb:49:in `_perform'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/script/tree/node.rb:50:in `perform'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:366:in `visit_prop'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:121:in `with_frame'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:389:in `block (2 levels) in visit_rule'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:389:in `map'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:389:in `block in visit_rule'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:387:in `visit_rule'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:152:in `block in visit'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `block in with_base'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:121:in `with_frame'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/stack.rb:79:in `with_base'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:152:in `visit'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `map'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:161:in `block in visit_children'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:173:in `with_environment'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:160:in `visit_children'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:180:in `visit_root'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/base.rb:36:in `visit'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:151:in `visit'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:36:in `css_tree'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/tree/root_node.rb:20:in `render'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/scss/lib/sass/engine.rb:274:in `render'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-import-once/lib/compass/import-once/engine.rb:17:in `block in render'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-import-once/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass-import-once/lib/compass/import-once/engine.rb:16:in `render'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:171:in `block (2 levels) in compile'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:153:in `timed'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:166:in `block in compile'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/logger.rb:46:in `red'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:165:in `compile'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:144:in `compile_if_required'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:129:in `block (2 levels) in run'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:127:in `each'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:127:in `block in run'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:153:in `timed'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/compiler.rb:126:in `run'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/commands/update_project.rb:49:in `perform'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/commands/base.rb:18:in `execute'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/commands/project_base.rb:19:in `execute'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/bin/compass:52:in `block in <main>'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/bin/compass:66:in `call'
+/Users/Sara/Downloads/CodeKit.app/Contents/Resources/engines/compass/compass/bin/compass:66:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Undefined variable: \"$width\".\A         on line 6 of /Users/Sara/Documents/proyectos/redradix/GRID-960/sass/base/_base.scss\A \A 1: /Users/Sara/Documents/proyectos/redradix/GRID-960/sass/base/_base.scss"; }

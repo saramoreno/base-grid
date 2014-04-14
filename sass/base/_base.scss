@@ -1,0 +1,41 @@
+/*------------------------------------------*\
+    VARIABLES
+\*------------------------------------------*/
+
+$width: 960px;
+$gutter: 20px;
+$columns:12;
+$column_width: $width / $columns;
+
+/*------------------------------------------*\
+    Basic
+\*------------------------------------------*/
+
+body {
+  min-width: $width;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: $width;
+}
+
+.grid {
+  display: inline; 
+  float: left;
+  margin-left: $gutter / 2;
+  margin-right: $gutter / 2;
+}
+
+/*------------------------------------------*\
+    Loops (for) 
+    Cálculo de las dimensiones de cada grid
+\*------------------------------------------*/
+
+@for $i from 1 to $columns {
+  .grid_#{$i} {
+    @extend .grid;
+    width: $i * $column_width - $gutter;
+  }
+}
