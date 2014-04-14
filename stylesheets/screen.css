@@ -72,83 +72,608 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     VARIABLES
 \*------------------------------------------*/
 /*------------------------------------------*\
-    Basic
+    BASE
 \*------------------------------------------*/
-/* line 14, ../sass/base/_base.scss */
-body {
-  min-width: 960px;
-}
-
-/* line 18, ../sass/base/_base.scss */
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 960px;
-}
-
-/* line 24, ../sass/base/_base.scss */
-.grid, .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11 {
+/* line 16, ../sass/_base.scss */
+.grid, .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
   display: inline;
   float: left;
   margin-left: 10px;
   margin-right: 10px;
 }
 
+/* line 23, ../sass/_base.scss */
+.relative, .push_1, .pull_1, .push_2, .pull_2, .push_3, .pull_3, .push_4, .pull_4, .push_5, .pull_5, .push_6, .pull_6, .push_7, .pull_7, .push_8, .pull_8, .push_9, .pull_9, .push_10, .pull_10, .push_11, .pull_11, .push_12, .pull_12 {
+  position: relative;
+}
+
+/*------------------------------------------*\
+    MIXINS
+\*------------------------------------------*/
 /*------------------------------------------*\
     Loops (for) 
     Cálculo de las dimensiones de cada grid
 \*------------------------------------------*/
-/* line 37, ../sass/base/_base.scss */
-.grid_1 {
+/*------------------------------------------*\
+    Basic
+\*------------------------------------------*/
+/* line 44, ../sass/_base.scss */
+body {
+  min-width: 960px;
+}
+
+/* line 48, ../sass/_base.scss */
+.grid, .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 55, ../sass/_base.scss */
+.relative, .push_1, .pull_1, .push_2, .pull_2, .push_3, .pull_3, .push_4, .pull_4, .push_5, .pull_5, .push_6, .pull_6, .push_7, .pull_7, .push_8, .pull_8, .push_9, .pull_9, .push_10, .pull_10, .push_11, .pull_11, .push_12, .pull_12 {
+  position: relative;
+}
+
+/* line 84, ../sass/_base.scss */
+.container_12 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_12 .grid_1 {
   width: 60px;
 }
 
-/* line 37, ../sass/base/_base.scss */
-.grid_2 {
+/* line 102, ../sass/_base.scss */
+.container_12 .prefix_1 {
+  padding-left: 80px;
+}
+/* line 106, ../sass/_base.scss */
+.container_12 .suffix_1 {
+  padding-right: 80px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_12 .push_1 {
+  left: 80px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_12 .pull_1 {
+  left: -80px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_12 .grid_2 {
   width: 140px;
 }
 
-/* line 37, ../sass/base/_base.scss */
-.grid_3 {
+/* line 102, ../sass/_base.scss */
+.container_12 .prefix_2 {
+  padding-left: 160px;
+}
+/* line 106, ../sass/_base.scss */
+.container_12 .suffix_2 {
+  padding-right: 160px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_12 .push_2 {
+  left: 160px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_12 .pull_2 {
+  left: -160px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_12 .grid_3 {
   width: 220px;
 }
 
-/* line 37, ../sass/base/_base.scss */
-.grid_4 {
+/* line 102, ../sass/_base.scss */
+.container_12 .prefix_3 {
+  padding-left: 240px;
+}
+/* line 106, ../sass/_base.scss */
+.container_12 .suffix_3 {
+  padding-right: 240px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_12 .push_3 {
+  left: 240px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_12 .pull_3 {
+  left: -240px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_12 .grid_4 {
   width: 300px;
 }
 
-/* line 37, ../sass/base/_base.scss */
-.grid_5 {
+/* line 102, ../sass/_base.scss */
+.container_12 .prefix_4 {
+  padding-left: 320px;
+}
+/* line 106, ../sass/_base.scss */
+.container_12 .suffix_4 {
+  padding-right: 320px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_12 .push_4 {
+  left: 320px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_12 .pull_4 {
+  left: -320px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_12 .grid_5 {
   width: 380px;
 }
 
-/* line 37, ../sass/base/_base.scss */
-.grid_6 {
+/* line 102, ../sass/_base.scss */
+.container_12 .prefix_5 {
+  padding-left: 400px;
+}
+/* line 106, ../sass/_base.scss */
+.container_12 .suffix_5 {
+  padding-right: 400px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_12 .push_5 {
+  left: 400px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_12 .pull_5 {
+  left: -400px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_12 .grid_6 {
   width: 460px;
 }
 
-/* line 37, ../sass/base/_base.scss */
-.grid_7 {
+/* line 102, ../sass/_base.scss */
+.container_12 .prefix_6 {
+  padding-left: 480px;
+}
+/* line 106, ../sass/_base.scss */
+.container_12 .suffix_6 {
+  padding-right: 480px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_12 .push_6 {
+  left: 480px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_12 .pull_6 {
+  left: -480px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_12 .grid_7 {
   width: 540px;
 }
 
-/* line 37, ../sass/base/_base.scss */
-.grid_8 {
+/* line 102, ../sass/_base.scss */
+.container_12 .prefix_7 {
+  padding-left: 560px;
+}
+/* line 106, ../sass/_base.scss */
+.container_12 .suffix_7 {
+  padding-right: 560px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_12 .push_7 {
+  left: 560px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_12 .pull_7 {
+  left: -560px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_12 .grid_8 {
   width: 620px;
 }
 
-/* line 37, ../sass/base/_base.scss */
-.grid_9 {
+/* line 102, ../sass/_base.scss */
+.container_12 .prefix_8 {
+  padding-left: 640px;
+}
+/* line 106, ../sass/_base.scss */
+.container_12 .suffix_8 {
+  padding-right: 640px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_12 .push_8 {
+  left: 640px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_12 .pull_8 {
+  left: -640px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_12 .grid_9 {
   width: 700px;
 }
 
-/* line 37, ../sass/base/_base.scss */
-.grid_10 {
+/* line 102, ../sass/_base.scss */
+.container_12 .prefix_9 {
+  padding-left: 720px;
+}
+/* line 106, ../sass/_base.scss */
+.container_12 .suffix_9 {
+  padding-right: 720px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_12 .push_9 {
+  left: 720px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_12 .pull_9 {
+  left: -720px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_12 .grid_10 {
   width: 780px;
 }
 
-/* line 37, ../sass/base/_base.scss */
-.grid_11 {
+/* line 102, ../sass/_base.scss */
+.container_12 .prefix_10 {
+  padding-left: 800px;
+}
+/* line 106, ../sass/_base.scss */
+.container_12 .suffix_10 {
+  padding-right: 800px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_12 .push_10 {
+  left: 800px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_12 .pull_10 {
+  left: -800px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_12 .grid_11 {
   width: 860px;
+}
+
+/* line 102, ../sass/_base.scss */
+.container_12 .prefix_11 {
+  padding-left: 880px;
+}
+/* line 106, ../sass/_base.scss */
+.container_12 .suffix_11 {
+  padding-right: 880px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_12 .push_11 {
+  left: 880px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_12 .pull_11 {
+  left: -880px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_12 .grid_12 {
+  width: 940px;
+}
+
+/* line 102, ../sass/_base.scss */
+.container_12 .prefix_12 {
+  padding-left: 960px;
+}
+/* line 106, ../sass/_base.scss */
+.container_12 .suffix_12 {
+  padding-right: 960px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_12 .push_12 {
+  left: 960px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_12 .pull_12 {
+  left: -960px;
+}
+
+/*------------------------------------------*\
+    Basic
+\*------------------------------------------*/
+/* line 44, ../sass/_base.scss */
+body {
+  min-width: 1000px;
+}
+
+/* line 48, ../sass/_base.scss */
+.grid, .grid_1, .grid_2, .grid_3, .grid_4, .grid_5, .grid_6, .grid_7, .grid_8, .grid_9, .grid_10, .grid_11, .grid_12 {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* line 55, ../sass/_base.scss */
+.relative, .push_1, .pull_1, .push_2, .pull_2, .push_3, .pull_3, .push_4, .pull_4, .push_5, .pull_5, .push_6, .pull_6, .push_7, .pull_7, .push_8, .pull_8, .push_9, .pull_9, .push_10, .pull_10, .push_11, .pull_11, .push_12, .pull_12 {
+  position: relative;
+}
+
+/* line 84, ../sass/_base.scss */
+.container_10 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_10 .grid_1 {
+  width: 80px;
+}
+
+/* line 102, ../sass/_base.scss */
+.container_10 .prefix_1 {
+  padding-left: 100px;
+}
+/* line 106, ../sass/_base.scss */
+.container_10 .suffix_1 {
+  padding-right: 100px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_10 .push_1 {
+  left: 100px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_10 .pull_1 {
+  left: -100px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_10 .grid_2 {
+  width: 180px;
+}
+
+/* line 102, ../sass/_base.scss */
+.container_10 .prefix_2 {
+  padding-left: 200px;
+}
+/* line 106, ../sass/_base.scss */
+.container_10 .suffix_2 {
+  padding-right: 200px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_10 .push_2 {
+  left: 200px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_10 .pull_2 {
+  left: -200px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_10 .grid_3 {
+  width: 280px;
+}
+
+/* line 102, ../sass/_base.scss */
+.container_10 .prefix_3 {
+  padding-left: 300px;
+}
+/* line 106, ../sass/_base.scss */
+.container_10 .suffix_3 {
+  padding-right: 300px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_10 .push_3 {
+  left: 300px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_10 .pull_3 {
+  left: -300px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_10 .grid_4 {
+  width: 380px;
+}
+
+/* line 102, ../sass/_base.scss */
+.container_10 .prefix_4 {
+  padding-left: 400px;
+}
+/* line 106, ../sass/_base.scss */
+.container_10 .suffix_4 {
+  padding-right: 400px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_10 .push_4 {
+  left: 400px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_10 .pull_4 {
+  left: -400px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_10 .grid_5 {
+  width: 480px;
+}
+
+/* line 102, ../sass/_base.scss */
+.container_10 .prefix_5 {
+  padding-left: 500px;
+}
+/* line 106, ../sass/_base.scss */
+.container_10 .suffix_5 {
+  padding-right: 500px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_10 .push_5 {
+  left: 500px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_10 .pull_5 {
+  left: -500px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_10 .grid_6 {
+  width: 580px;
+}
+
+/* line 102, ../sass/_base.scss */
+.container_10 .prefix_6 {
+  padding-left: 600px;
+}
+/* line 106, ../sass/_base.scss */
+.container_10 .suffix_6 {
+  padding-right: 600px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_10 .push_6 {
+  left: 600px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_10 .pull_6 {
+  left: -600px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_10 .grid_7 {
+  width: 680px;
+}
+
+/* line 102, ../sass/_base.scss */
+.container_10 .prefix_7 {
+  padding-left: 700px;
+}
+/* line 106, ../sass/_base.scss */
+.container_10 .suffix_7 {
+  padding-right: 700px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_10 .push_7 {
+  left: 700px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_10 .pull_7 {
+  left: -700px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_10 .grid_8 {
+  width: 780px;
+}
+
+/* line 102, ../sass/_base.scss */
+.container_10 .prefix_8 {
+  padding-left: 800px;
+}
+/* line 106, ../sass/_base.scss */
+.container_10 .suffix_8 {
+  padding-right: 800px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_10 .push_8 {
+  left: 800px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_10 .pull_8 {
+  left: -800px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_10 .grid_9 {
+  width: 880px;
+}
+
+/* line 102, ../sass/_base.scss */
+.container_10 .prefix_9 {
+  padding-left: 900px;
+}
+/* line 106, ../sass/_base.scss */
+.container_10 .suffix_9 {
+  padding-right: 900px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_10 .push_9 {
+  left: 900px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_10 .pull_9 {
+  left: -900px;
+}
+
+/* line 93, ../sass/_base.scss */
+.container_10 .grid_10 {
+  width: 980px;
+}
+
+/* line 102, ../sass/_base.scss */
+.container_10 .prefix_10 {
+  padding-left: 1000px;
+}
+/* line 106, ../sass/_base.scss */
+.container_10 .suffix_10 {
+  padding-right: 1000px;
+}
+
+/* line 115, ../sass/_base.scss */
+.container_10 .push_10 {
+  left: 1000px;
+}
+
+/* line 122, ../sass/_base.scss */
+.container_10 .pull_10 {
+  left: -1000px;
 }

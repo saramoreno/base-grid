@@ -1,0 +1,128 @@
+/*------------------------------------------*\
+    VARIABLES
+\*------------------------------------------*/
+
+$columns: 12;
+$width: 960px;
+$gutter: 20px;
+$prefix: true !default;
+$sufix: true !default;
+$push: true !default;
+$pull: true !default;
+
+/*------------------------------------------*\
+    BASE
+\*------------------------------------------*/
+.grid {
+    display: inline; 
+    float: left;
+    margin-left: $gutter / 2;
+    margin-right: $gutter / 2;
+  }
+
+.relative {
+  position: relative;
+}
+/*------------------------------------------*\
+    MIXINS
+\*------------------------------------------*/
+
+@mixin grid_base (
+  $columns: 12,
+  $width: 960px,
+  $gutter: 20px,
+  $prefix: true,
+  $sufix: true
+  ){
+
+  $column_width: $width / $columns;
+
+  /*------------------------------------------*\
+      Basic
+  \*------------------------------------------*/
+
+  body {
+    min-width: $width;
+  }
+
+  .grid {
+    display: inline; 
+    float: left;
+    margin-left: $gutter / 2;
+    margin-right: $gutter / 2;
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  @include generate_grid (
+    $columns,
+    $width,
+    $gutter,
+    $prefix,
+    $push
+  ) 
+}
+
+/*------------------------------------------*\
+    Loops (for) 
+    Cálculo de las dimensiones de cada grid
+\*------------------------------------------*/
+
+@mixin generate_grid (
+    $columns: 12,
+    $width: 960px,
+    $gutter: 20px,
+    $prefix: true,
+    $push: true
+) {
+  
+  $column_width: $width / $columns;
+  $container_name: ".container_#{$columns}";
+
+  #{$container_name} {
+    margin-left: auto;
+    margin-right: auto;
+    width: $width;
+  }
+
+  @for $i from 1 through $columns {
+    .grid_#{$i} {
+      @extend .grid;
+      #{$container_name} & {
+      width: $i * $column_width - $gutter;
+      }
+    }
+
+    #{$container_name} {
+
+      @if $prefix == true {
+
+         .prefix_#{$i} {
+          padding-left: $i * $column_width;
+        }
+
+         .suffix_#{$i} {
+          padding-right: $i * $column_width;
+        }
+      } 
+    }
+
+    @if $push == true {
+      .push_#{$i} {
+      @extend .relative;
+      #{$container_name} & {
+      left: $i * $column_width;
+      }
+    }
+
+      .pull_#{$i} {
+        @extend .relative;
+        #{$container_name} & {
+        left: -$i * $column_width;
+        }
+      }
+    }
+  }
+}

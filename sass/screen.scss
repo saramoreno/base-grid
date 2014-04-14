@@ -7,4 +7,9 @@
 
 //GLOBALS 
 
-@import "base/base"
+@import "base";
+
+@include grid_base;
+@include grid_base (10, 1000px);
+
+
